@@ -4,7 +4,7 @@ function ColorMyPencils(color)
 	vim.cmd.colorscheme(color)
 
 	-- Add some opacity
-	-- vim.api.nvim_set_hl(0, "Normal", { bg = "none" }) -- Vim itself
+    -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" }) -- Vim itself
 	-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" }) -- floating windows
 end
 ColorMyPencils()

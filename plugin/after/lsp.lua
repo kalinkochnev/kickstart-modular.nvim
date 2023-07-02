@@ -3,6 +3,7 @@ lsp.preset('recommended')
 lsp.ensure_installed({
 	'lua_ls',
 	'rust_analyzer',
+    'wgsl_analyzer',
 	'pylsp'
 })
 

@@ -31,3 +31,9 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 
+
+--- Folding
+local opt = vim.opt
+opt.foldlevel = 20
+opt.foldmethod = "expr"
+opt.foldexpr = "nvim_treesitter#foldexpr()"
