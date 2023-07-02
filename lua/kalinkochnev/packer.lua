@@ -74,5 +74,7 @@ use {
     config = function() require("nvim-autopairs").setup {} end
 }
 
+-- Virtual Text (for rust-analyzer)
+use('lvimuser/lsp-inlayhints.nvim')
 -- Code folding
 end)
