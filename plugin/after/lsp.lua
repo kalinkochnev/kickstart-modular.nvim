@@ -4,7 +4,8 @@ lsp.ensure_installed({
 	'lua_ls',
 	'rust_analyzer',
     'wgsl_analyzer',
-	'pylsp'
+	'pylsp',
+    'clangd'
 })
 
 -- Fix Undefined global 'vim'

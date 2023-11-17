@@ -44,14 +44,14 @@ return require('packer').startup(function(use)
 -- NerdTree
 use('preservim/nerdtree')
 
+-- Icons
+use('nvim-tree/nvim-web-devicons')
+
 -- Aesthetic status line nvim
 use {
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 }
-
--- Icons
-use('ryanoasis/vim-devicons')
 
 -- Formatter support
 use('mhartington/formatter.nvim')
@@ -76,5 +76,17 @@ use {
 
 -- Virtual Text (for rust-analyzer)
 use('lvimuser/lsp-inlayhints.nvim')
--- Code folding
+
+-- Debugging 
+use('mfussenegger/nvim-dap')
+use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+
+-- Testing
+use {
+  "klen/nvim-test",
+  config = function()
+    require('nvim-test').setup()
+  end
+}
+
 end)
