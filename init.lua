@@ -68,9 +68,21 @@ require('treesitter-setup')
 -- (Language Server Protocol)
 require('lsp-setup')
 
+-- [[ Configure LSP inlay ]]
+require('lsp-inlayhints')
+
 -- [[ Configure nvim-cmp ]]
 -- (completion)
 require('cmp-setup')
+
+-- [[ Configure theme ]]
+require('theme-setup')
+
+-- [[ Configure tree navigator ]]
+require('tree-setup')
+
+-- [[ Configure undo tree ]]
+
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et

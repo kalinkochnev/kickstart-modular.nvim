@@ -50,7 +50,7 @@ require('lazy').setup({
   },
 
   -- Useful plugin to show you pending keybinds.
-  { 'folke/which-key.nvim', opts = {} },
+  { 'folke/which-key.nvim',        opts = {} },
   {
     -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
@@ -89,15 +89,18 @@ require('lazy').setup({
       end,
     },
   },
+  -- Theme
+  { 'rose-pine/neovim',            name = "rose-pine" },
 
-  {
-    -- Theme inspired by Atom
-    'navarasu/onedark.nvim',
-    priority = 1000,
-    config = function()
-      vim.cmd.colorscheme 'onedark'
-    end,
-  },
+  -- Tree file navigator and icons
+  { 'nvim-tree/nvim-tree.lua' },
+  { 'nvim-tree/nvim-web-devicons' },
+
+  -- Undotree
+  { 'mbbill/undotree' },
+
+  -- Virtual Text (for rust-analyzer)
+  { 'lvimuser/lsp-inlayhints.nvim' },
 
   {
     -- Set lualine as statusline
@@ -105,8 +108,8 @@ require('lazy').setup({
     -- See `:help lualine.txt`
     opts = {
       options = {
-        icons_enabled = false,
-        theme = 'onedark',
+        icons_enabled = true,
+        theme = 'rose-pine',
         component_separators = '|',
         section_separators = '',
       },
